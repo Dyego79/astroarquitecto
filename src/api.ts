@@ -14,7 +14,7 @@ export const projectSchema = z.object({
 const api = {
   list: async () => {
     const document = await fetch(
-      "https://docs.google.com/spreadsheets/d/e/2PACX-1vSOxDK3aFMGRc7GfyF4MCZ_8chgV8uHYQMcuyVFQfIMQlkQCi90hWdkDRe7czTzldFTG4gUd78aI8HK/pub?output=tsv"
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3273Cu1vP9D2PmCUiD5u_g-hzauTYp9edAt9_B6ZoNoELwHteuSZ8L0ncZTGlft5JuOjilmTNzLWF/pub?gid=0&single=true&output=tsv"
     ).then((res) => res.text());
     const rows = document
       .split("\n")
